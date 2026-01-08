@@ -1,1 +1,1 @@
-# yaoshen
+See README for deploy steps.
