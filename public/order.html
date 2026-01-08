@@ -1,22 +1,16 @@
 
 <!doctype html>
-<html>
-<head>
+<html><head>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel=stylesheet href="css/style.css">
-<title>处理</title>
 </head>
 <body>
-<h2>处理请求</h2>
-<div id=pay>
- <p>USDT (TRC20)</p>
- <img src="assets/usdt-trc20.png" width=200>
- <input id=addr value="TL6pvvYphpWshdqJ99mSZCq9izYqt2evyX" readonly>
- <button onclick="copy()">复制</button>
- <p>金额：<b id=amt></b></p>
- <p>剩余 <span id=t>30:00</span></p>
-</div>
-<div id=msg></div>
+<h2>处理中</h2>
+<div>USDT TRC20</div>
+<div>地址：TL6pvvYphpWshdqJ99mSZCq9izYqt2evyX</div>
+<button onclick="copy()">复制地址</button>
+<div>金额：<b id=a></b></div>
+<div>状态：<span id=s>等待付款</span></div>
+<div>剩余：<span id=t>30:00</span></div>
 <script src="js/order.js"></script>
-</body>
-</html>
+</body></html>

@@ -1,15 +1,16 @@
 
 <!doctype html>
-<html>
-<head>
+<html><head>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel=stylesheet href="css/style.css">
-<title>我不是药神</title>
 </head>
 <body>
-<h1>我不是药神</h1>
-<div id=list></div>
-<a class=btn href="order.html">继续</a>
-<script src="js/shop.js"></script>
-</body>
-</html>
+<h1>处理中心</h1>
+<button onclick="create()">提交请求</button>
+<script>
+function create(){
+ fetch('/api/order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({amount:(Math.random()*0.01+0.01).toFixed(4)})})
+ .then(r=>r.json()).then(d=>location.href='order.html?id='+d.id);
+}
+</script>
+</body></html>
