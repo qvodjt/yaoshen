@@ -1,1 +1,5 @@
-body{font-family:sans-serif;background:#f5f5f5;color:#222;padding:20px} .btn,button{background:#222;color:#fff;padding:8px;border:0}
+
+body{font-family:sans-serif;background:#f5f5f5;color:#222;padding:20px}
+h1,h2{font-weight:500}
+button{padding:8px 12px;background:#222;color:#fff;border:0}
+@media(max-width:600px){body{padding:10px}}
