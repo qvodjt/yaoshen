@@ -1,0 +1,1 @@
+fetch('/api/products').then(r=>r.json()).then(d=>document.getElementById('list').innerText=JSON.stringify(d));

@@ -1,0 +1,1 @@
+function login(){fetch('/api/admin/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({user:u.value,pass:p.value})}).then(r=>r.json()).then(d=>{if(d.ok)location.href='admin-panel.html';});}
