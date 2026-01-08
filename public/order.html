@@ -1,0 +1,22 @@
+
+<!doctype html>
+<html>
+<head>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href="css/style.css">
+<title>处理</title>
+</head>
+<body>
+<h2>处理请求</h2>
+<div id=pay>
+ <p>USDT (TRC20)</p>
+ <img src="assets/usdt-trc20.png" width=200>
+ <input id=addr value="TL6pvvYphpWshdqJ99mSZCq9izYqt2evyX" readonly>
+ <button onclick="copy()">复制</button>
+ <p>金额：<b id=amt></b></p>
+ <p>剩余 <span id=t>30:00</span></p>
+</div>
+<div id=msg></div>
+<script src="js/order.js"></script>
+</body>
+</html>
